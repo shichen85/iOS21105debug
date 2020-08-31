@@ -16,6 +16,7 @@
 		F25D5E1724FC64EE00C02251 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F25D5E1624FC64EE00C02251 /* main.m */; };
 		F25D5E2124FC64EE00C02251 /* testTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F25D5E2024FC64EE00C02251 /* testTests.m */; };
 		F25D5E2C24FC64EE00C02251 /* testUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F25D5E2B24FC64EE00C02251 /* testUITests.m */; };
+		F25D5E3B24FC66E900C02251 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F25D5E3A24FC66E900C02251 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		F25D5E2724FC64EE00C02251 /* testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F25D5E2B24FC64EE00C02251 /* testUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testUITests.m; sourceTree = "<group>"; };
 		F25D5E2D24FC64EE00C02251 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F25D5E3A24FC66E900C02251 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F25D5E3B24FC66E900C02251 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +91,7 @@
 				F25D5E1F24FC64EE00C02251 /* testTests */,
 				F25D5E2A24FC64EE00C02251 /* testUITests */,
 				F25D5E0224FC64EA00C02251 /* Products */,
+				F25D5E3924FC66E900C02251 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,6 +139,14 @@
 				F25D5E2D24FC64EE00C02251 /* Info.plist */,
 			);
 			path = testUITests;
+			sourceTree = "<group>";
+		};
+		F25D5E3924FC66E900C02251 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F25D5E3A24FC66E900C02251 /* StoreKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -446,7 +458,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bscotch.test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bscotch.bscotchpack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -463,7 +475,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bscotch.test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bscotch.bscotchpack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
